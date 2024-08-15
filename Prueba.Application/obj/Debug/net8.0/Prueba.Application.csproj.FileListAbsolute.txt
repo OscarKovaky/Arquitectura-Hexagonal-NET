@@ -1,0 +1,16 @@
+C:\ExamenVue\Back\Prueba.Application\bin\Debug\net8.0\Prueba.Application.deps.json
+C:\ExamenVue\Back\Prueba.Application\bin\Debug\net8.0\Prueba.Application.dll
+C:\ExamenVue\Back\Prueba.Application\bin\Debug\net8.0\Prueba.Application.pdb
+C:\ExamenVue\Back\Prueba.Application\bin\Debug\net8.0\Prueba.Core.dll
+C:\ExamenVue\Back\Prueba.Application\bin\Debug\net8.0\Prueba.Core.pdb
+C:\ExamenVue\Back\Prueba.Application\obj\Debug\net8.0\Prueba.Application.csproj.AssemblyReference.cache
+C:\ExamenVue\Back\Prueba.Application\obj\Debug\net8.0\Prueba.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\ExamenVue\Back\Prueba.Application\obj\Debug\net8.0\Prueba.Application.AssemblyInfoInputs.cache
+C:\ExamenVue\Back\Prueba.Application\obj\Debug\net8.0\Prueba.Application.AssemblyInfo.cs
+C:\ExamenVue\Back\Prueba.Application\obj\Debug\net8.0\Prueba.Application.csproj.CoreCompileInputs.cache
+C:\ExamenVue\Back\Prueba.Application\obj\Debug\net8.0\Prueba.Application.sourcelink.json
+C:\ExamenVue\Back\Prueba.Application\obj\Debug\net8.0\Prueba.Application.csproj.CopyComplete
+C:\ExamenVue\Back\Prueba.Application\obj\Debug\net8.0\Prueba.Application.dll
+C:\ExamenVue\Back\Prueba.Application\obj\Debug\net8.0\refint\Prueba.Application.dll
+C:\ExamenVue\Back\Prueba.Application\obj\Debug\net8.0\Prueba.Application.pdb
+C:\ExamenVue\Back\Prueba.Application\obj\Debug\net8.0\ref\Prueba.Application.dll

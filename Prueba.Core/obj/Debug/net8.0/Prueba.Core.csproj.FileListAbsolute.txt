@@ -1,0 +1,12 @@
+C:\ExamenVue\Back\Prueba.Core\bin\Debug\net8.0\Prueba.Core.deps.json
+C:\ExamenVue\Back\Prueba.Core\bin\Debug\net8.0\Prueba.Core.dll
+C:\ExamenVue\Back\Prueba.Core\bin\Debug\net8.0\Prueba.Core.pdb
+C:\ExamenVue\Back\Prueba.Core\obj\Debug\net8.0\Prueba.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\ExamenVue\Back\Prueba.Core\obj\Debug\net8.0\Prueba.Core.AssemblyInfoInputs.cache
+C:\ExamenVue\Back\Prueba.Core\obj\Debug\net8.0\Prueba.Core.AssemblyInfo.cs
+C:\ExamenVue\Back\Prueba.Core\obj\Debug\net8.0\Prueba.Core.csproj.CoreCompileInputs.cache
+C:\ExamenVue\Back\Prueba.Core\obj\Debug\net8.0\Prueba.Core.sourcelink.json
+C:\ExamenVue\Back\Prueba.Core\obj\Debug\net8.0\Prueba.Core.dll
+C:\ExamenVue\Back\Prueba.Core\obj\Debug\net8.0\refint\Prueba.Core.dll
+C:\ExamenVue\Back\Prueba.Core\obj\Debug\net8.0\Prueba.Core.pdb
+C:\ExamenVue\Back\Prueba.Core\obj\Debug\net8.0\ref\Prueba.Core.dll

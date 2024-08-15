@@ -1,0 +1,13 @@
+2024-08-15 03:21:59 [Information] Now listening on: http://localhost:5004
+2024-08-15 03:21:59 [Information] Application started. Press Ctrl+C to shut down.
+2024-08-15 03:21:59 [Information] Hosting environment: Development
+2024-08-15 03:21:59 [Information] Content root path: C:\ExamenVue\Back\Prueba.API
+2024-08-15 03:22:11 [Information] Handling request: PUT /api/Auth/update-username
+2024-08-15 03:22:11 [Information] Starting update process for user ID 9
+2024-08-15 03:22:12 [Information] Username updated successfully for user ID 9
+2024-08-15 03:22:12 [Information] Finished handling request. Status code: 204. Time taken: 776ms
+2024-08-15 03:22:12 [Information] Handling request: GET /api/Auth
+2024-08-15 03:22:12 [Information] Starting to retrieve all users
+2024-08-15 03:22:12 [Information] Successfully retrieved 4 users
+2024-08-15 03:22:12 [Information] Finished handling request. Status code: 200. Time taken: 100ms
+2024-08-15 03:23:01 [Information] Application is shutting down...

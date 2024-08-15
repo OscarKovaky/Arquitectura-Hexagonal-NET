@@ -1,0 +1,46 @@
+### Obtener todos los nodos
+GET http://localhost:5004/api/tree
+Accept: application/json
+
+### Obtener un nodo por ID
+GET http://localhost:5004/api/tree/1
+Accept: application/json
+
+### Crear un nuevo nodo
+POST http://localhost:5004/api/tree
+Content-Type: application/json
+
+{
+  "name": "New Node",
+  "isFile": false,
+  "path": "test",
+  "parentId": null
+}
+
+### Actualizar un nodo existente
+PUT http://localhost:5004/api/tree/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Updated Node",
+  "isFile": false,
+  "path": null,
+  "parentId": null
+}
+
+### Eliminar un nodo por ID
+DELETE http://localhost:5004/api/tree/1
+Accept: application/json
+
+### Subir un archivo
+POST http://localhost:5004/api/tree/upload
+Content-Type: multipart/form-data
+
+--boundary
+Content-Disposition: form-data; name="file"; filename="example.txt"
+Content-Type: text/plain
+
+This is an example file content.
+--boundary--
+

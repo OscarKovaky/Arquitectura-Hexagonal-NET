@@ -18,10 +18,22 @@ services:
       - pgdata:/var/lib/postgresql/data
       - /c/docker/shared:/usr/shared
 
+  redis:
+    image: "redis:6.2.10"  # Specific stable version of Redis
+    container_name: redis-container-pruebas
+    networks:
+      - app-network-public
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: always
+
 networks:
   app-network-public:
     driver: bridge
 
 volumes:
   pgdata:
+  redis_data:
 

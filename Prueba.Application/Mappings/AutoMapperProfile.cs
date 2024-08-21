@@ -11,6 +11,7 @@ public class AutoMapperProfile : Profile
     {
         CreateMap<User, UserDto>().ReverseMap();
         CreateMap<TreeNode, TreeNodeDto>().ReverseMap();
+        CreateMap<Categoria, CategoriaDto>().ReverseMap();
         CreateMap<CreateTreeNodeCommand, TreeNode>()
             .ForMember(dest => dest.Id, opt => opt.Ignore()); 
     }

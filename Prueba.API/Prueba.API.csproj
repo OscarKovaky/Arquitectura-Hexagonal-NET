@@ -15,9 +15,11 @@
   <PackageReference Include="EPPlus" Version="7.2.2" />
   <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.7" />
   <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   <PackageReference Include="Serilog.AspNetCore" Version="8.0.2" />
   <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
   <PackageReference Include="Serilog.Sinks.File" Version="6.0.0" />
+  <PackageReference Include="StackExchange.Redis" Version="2.8.0" />
   <PackageReference Include="Swashbuckle.AspNetCore" Version="6.7.0" />
 	 <PackageReference Include="MediatR" Version="11.1.0" />
 	<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
@@ -27,12 +29,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Prueba.Application\Prueba.Application.csproj" />
     <ProjectReference Include="..\Prueba.Infrastructure\Prueba.Infrastructure.csproj" />
-  </ItemGroup>
-  
-
-  
-  <ItemGroup>
-    <Folder Include="Configurations\" />
   </ItemGroup>
   
 

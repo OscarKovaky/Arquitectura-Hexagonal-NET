@@ -11,3 +11,55 @@
 2024-08-15 03:22:12 [Information] Successfully retrieved 4 users
 2024-08-15 03:22:12 [Information] Finished handling request. Status code: 200. Time taken: 100ms
 2024-08-15 03:23:01 [Information] Application is shutting down...
+2024-08-15 10:01:19 [Information] Now listening on: http://localhost:5004
+2024-08-15 10:01:19 [Information] Application started. Press Ctrl+C to shut down.
+2024-08-15 10:01:19 [Information] Hosting environment: Development
+2024-08-15 10:01:19 [Information] Content root path: C:\ExamenVue\Back\Prueba.API
+2024-08-15 10:01:19 [Information] Handling request: GET /api/Auth
+2024-08-15 10:01:19 [Information] Starting to retrieve all users
+2024-08-15 10:01:20 [Information] Successfully retrieved 4 users
+2024-08-15 10:01:21 [Information] Finished handling request. Status code: 200. Time taken: 1628ms
+2024-08-15 10:01:26 [Information] Handling request: GET /api/files/export-users
+2024-08-15 10:01:26 [Information] Starting to retrieve all users
+2024-08-15 10:01:26 [Information] Successfully retrieved 4 users
+2024-08-15 10:01:27 [Information] Finished handling request. Status code: 200. Time taken: 764ms
+2024-08-15 10:03:45 [Information] Handling request: GET /api/Auth
+2024-08-15 10:03:45 [Information] Starting to retrieve all users
+2024-08-15 10:03:45 [Information] Successfully retrieved 4 users
+2024-08-15 10:03:45 [Information] Finished handling request. Status code: 200. Time taken: 15ms
+2024-08-15 10:11:04 [Information] Handling request: POST /api/Auth/register
+2024-08-15 10:11:04 [Information] Starting registration process for user test5
+2024-08-15 10:11:04 [Information] User test5 registered successfully with ID 10
+2024-08-15 10:11:05 [Information] Finished handling request. Status code: 201. Time taken: 925ms
+2024-08-15 10:11:05 [Information] Handling request: GET /api/Auth
+2024-08-15 10:11:05 [Information] Starting to retrieve all users
+2024-08-15 10:11:05 [Information] Successfully retrieved 5 users
+2024-08-15 10:11:05 [Information] Finished handling request. Status code: 200. Time taken: 10ms
+2024-08-15 10:11:20 [Information] Handling request: PUT /api/Auth/update-username
+2024-08-15 10:11:20 [Information] Starting update process for user ID 10
+2024-08-15 10:11:20 [Information] Username updated successfully for user ID 10
+2024-08-15 10:11:20 [Information] Finished handling request. Status code: 204. Time taken: 87ms
+2024-08-15 10:11:20 [Information] Handling request: GET /api/Auth
+2024-08-15 10:11:20 [Information] Starting to retrieve all users
+2024-08-15 10:11:20 [Information] Successfully retrieved 5 users
+2024-08-15 10:11:20 [Information] Finished handling request. Status code: 200. Time taken: 4ms
+2024-08-15 10:19:25 [Information] Application is shutting down...
+2024-08-21 14:59:21 [Information] Now listening on: http://localhost:5004
+2024-08-21 14:59:21 [Information] Application started. Press Ctrl+C to shut down.
+2024-08-21 14:59:21 [Information] Hosting environment: Development
+2024-08-21 14:59:21 [Information] Content root path: C:\ExamenVue\Back\Prueba.API
+2024-08-21 15:01:05 [Information] Handling request: GET //api/Categorias
+2024-08-21 15:01:05 [Information] Finished handling request. Status code: 404. Time taken: 143ms
+2024-08-21 15:02:53 [Information] Handling request: GET /api/Categorias
+2024-08-21 15:05:57 [Information] Handling request: GET /api/Categorias
+2024-08-21 15:08:20 [Information] Handling request: GET /api/Categorias
+2024-08-21 15:08:21 [Information] Finished handling request. Status code: 200. Time taken: 1351ms
+2024-08-21 15:09:54 [Information] Handling request: GET /api/Categorias
+2024-08-21 15:09:54 [Information] Finished handling request. Status code: 200. Time taken: 61ms
+2024-08-21 15:17:06 [Information] Application is shutting down...
+2024-08-21 15:17:35 [Information] Now listening on: http://localhost:5004
+2024-08-21 15:17:35 [Information] Application started. Press Ctrl+C to shut down.
+2024-08-21 15:17:35 [Information] Hosting environment: Development
+2024-08-21 15:17:35 [Information] Content root path: C:\ExamenVue\Back\Prueba.API
+2024-08-21 15:17:57 [Information] Handling request: GET /api/Categorias
+2024-08-21 15:18:22 [Information] Finished handling request. Status code: 200. Time taken: 25708ms

@@ -73,3 +73,6 @@ C:\ExamenVue\Back\Prueba.API\obj\Debug\net8.0\refint\Prueba.API.dll
 C:\ExamenVue\Back\Prueba.API\obj\Debug\net8.0\Prueba.API.pdb
 C:\ExamenVue\Back\Prueba.API\obj\Debug\net8.0\Prueba.API.genruntimeconfig.cache
 C:\ExamenVue\Back\Prueba.API\obj\Debug\net8.0\ref\Prueba.API.dll
+C:\ExamenVue\Back\Prueba.API\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\ExamenVue\Back\Prueba.API\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+C:\ExamenVue\Back\Prueba.API\bin\Debug\net8.0\StackExchange.Redis.dll

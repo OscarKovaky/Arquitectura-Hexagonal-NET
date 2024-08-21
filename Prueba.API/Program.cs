@@ -11,8 +11,11 @@ using Prueba.Infrastructure.Persistence;
 using Prueba.Infrastructure.Repositories;
 using Prueba.Infrastructure.Services;
 using AutoMapper;
+using Prueba.API.Configurations;
 using Prueba.Application.Mappings;
+using Prueba.Core.Services;
 using Prueba.Infrastructure.Logging;
+using StackExchange.Redis;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -29,9 +32,47 @@ builder.Services.AddSwaggerGen(c =>
 var mappingConfig = new MapperConfiguration(mc => { mc.AddProfile(new AutoMapperProfile()); });
 builder.Services.AddSingleton(mappingConfig.CreateMapper());
 
+//Redis 
+// Retrieve Redis connection string from environment variable or appsettings.json
+// Bind the Redis configuration section to the RedisConfig class
+var redisConfig = builder.Configuration.GetSection("Redis").Get<RedisConfig>();
+
+// Override the connection string with the environment variable if available
+var redisConnectionString = Environment.GetEnvironmentVariable("REDIS_CONNECTION_STRING");
+
+if (!string.IsNullOrWhiteSpace(redisConnectionString))
+{
+    redisConfig.ConnectionString = redisConnectionString;
+}
+
+if (string.IsNullOrWhiteSpace(redisConfig.ConnectionString))
+{
+    throw new InvalidOperationException("Redis connection string is not configured properly.");
+}
+
+// Register Redis connection
+var redis = ConnectionMultiplexer.Connect(redisConfig.ConnectionString);
+builder.Services.AddSingleton<IConnectionMultiplexer>(redis);
+        
+// Register RedisCacheService
+builder.Services.AddSingleton<ICacheService>(new RedisCacheService(redis, redisConfig.InstanceName));
+
+
 // Add Dapper Repositories
 builder.Services.AddScoped<ITreeNodeRepository, TreeNodeRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+
+builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
+
+// Registrar CategoriaRepository como la implementación principal de ICategoriaRepository
+builder.Services.AddScoped<CategoriaRepository>();
+builder.Services.AddScoped<ICategoriaRepository>(provider =>
+{
+    var repository = provider.GetRequiredService<CategoriaRepository>();
+    var cacheService = provider.GetRequiredService<ICacheService>();
+    return new CachedCategoriaRepository(repository, cacheService);
+});
+
 // Add Services
 builder.Services.AddTransient<ITreeService, TreeService>();
 builder.Services.AddTransient<IUserService, UserService>();
@@ -46,6 +87,8 @@ builder.Logging.AddFile(@"C:\ExamenVue\Back\Prueba.API\Logs\log.txt");
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddSingleton(new DatabaseContext(connectionString));
 
+
+// Other service registrations
 // Configurar el contexto de la licencia
 ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
 
